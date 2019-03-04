@@ -1,13 +1,21 @@
 'use strict';
 
+/** required libraries */
 const got = require('got');
 const money = require('money');
 const chalk = require('chalk');
 const ora = require('ora');
 const currencies = require('../lib/currencies.json');
 
+/** required library ./constants for saving configuration */
 const {API} = require('./constants');
 
+/**
+ * @function command - main command to understand and process the provided command
+ * @param {string} amount - amount of money
+ * @param {string} from - currency to convert from
+ * @param {string} to - currency to convert to
+ */
 const cash = async command => {
 	const {amount} = command;
 	const from = command.from.toUpperCase();
