@@ -20,15 +20,6 @@ Use *cash*:
 
 `node bin/index.js`
 
-(Optionally) create a script to call in your path
-  
-`vim /usr/local/bin/cash.sh` :
-
-```
-!/usr/bin/bash
-
-node /path/to/3-musketeers/cash/bin/index.js
-```
 
 ## Usage
 
