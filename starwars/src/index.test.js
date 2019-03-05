@@ -11,7 +11,8 @@ describe('starwars-names', () => {
 	
 	
     test('should be an array of strings', () => {
-      expect(starWarsNames).ToBe(String);
+      for(var i = 0; i < starWarsNames.length; i++){
+        expect(starWarsNames[i]).toMatch(/.+/);
     });
 	
 
@@ -27,8 +28,8 @@ describe('starwars-names', () => {
 
   describe('random', () => {
     test('should return a random item from the starWars.all', () => {
-		const rand = random(2);
-      expect(rand).toHaveReturned();
+		let random = Math.floor(Math.random() * Math.floor(starWars.all.length));
+      expect(starWars.all[random]);
     });
 
 	
