@@ -12,7 +12,7 @@ describe('starwars-names', () => {
 	
     test('should be an array of strings', () => {
       for(var i = 0; i < starWarsNames.length; i++){
-        expect(starWarsNames[i]).toMatch(/.+/);
+	  expect(starWarsNames[i]).toMatch(/.+/);}
     });
 	
 
